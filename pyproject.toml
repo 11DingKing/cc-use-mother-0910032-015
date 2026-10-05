@@ -1,6 +1,12 @@
 [project]
 name = "domain-contract-0910032-015"
-version = "0.1.0"
-description = "主题课程依赖发布的领域约定与校验工具"
+version = "0.2.0"
+description = "主题课程依赖发布：图谱校验、冻结发布、版本链与预约影响分析"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+curriculum-api = "curriculum_publish.api:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
